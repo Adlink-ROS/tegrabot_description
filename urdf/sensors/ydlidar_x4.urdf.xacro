@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot name="sensor_ydlidar" xmlns:xacro="http://ros.org/wiki/xacro">
+	<!--<xacro:include filename="$(find tegraBot_description)/urdf/turtlebot_gazebo.urdf.xacro"/>-->
+  <xacro:include filename="$(find tegraBot_description)/urdf/tegraBot_properties.urdf.xacro"/>
+
+  <!-- Parameterised in part by the values in tegraBot_properties.urdf.xacro -->
+  <xacro:macro name="sensor_ydlidar" params="parent">
+    <joint name="laser_joint" type="fixed">
+      <origin xyz="-0.025 0.0 0.05"
+              rpy="0 0 0"/>
+      <parent link="${parent}"/>
+      <child link="laser_frame" />
+    </joint>
+
+    <link name="laser_frame">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://tegraBot_description/meshes/sensors/ydlidar_x4.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.05" radius="0.03"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.2"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.000076563" ixy="0.0" ixz="0.0"
+                 iyy="0.000076563" iyz="0.0"
+                 izz="0.00015038281"/>
+      </inertial>
+    </link>
+
+  </xacro:macro>
+</robot>

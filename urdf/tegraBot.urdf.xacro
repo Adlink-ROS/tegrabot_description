@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="tegraBot" xmlns:xacro="http://ros.org/wiki/xacro">
+       <!--xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">-->
+<!--
+    - Base      : kobuki
+    - Stacks    : hexagons
+    - 3d Sensor : astra
+-->    
+	
+	<!--Following lines was copied from kobuki_hexagons_astra.urdf.xacro-->
+	<!--<xacro:include filename="$(find tegraBot_description)/urdf/turtlebot_common_library.urdf.xacro" />-->
+  <xacro:include filename="$(find tegraBot_description)/urdf/tegraBot_properties.urdf.xacro"/>
+  <xacro:include filename="$(find tegraBot_description)/urdf/kobuki.urdf.xacro" />
+  <xacro:include filename="$(find tegraBot_description)/urdf/stacks/tegraBot_stack.urdf.xacro"/>
+  <xacro:include filename="$(find tegraBot_description)/urdf/computers/m200_jt2.urdf.xacro"/>
+  <xacro:include filename="$(find tegraBot_description)/urdf/sensors/astra.urdf.xacro"/>
+  <xacro:include filename="$(find tegraBot_description)/urdf/sensors/ydlidar_x4.urdf.xacro"/>
+  
+  <kobuki/>
+  <stack_hexagons parent="base_link"/>
+  <sensor_astra parent="base_link"/>
+  <computers parent="plate_middle_link"/>
+  <sensor_ydlidar parent="plate_bottom_link"/>
+</robot>
