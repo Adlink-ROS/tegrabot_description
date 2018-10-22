@@ -3,7 +3,7 @@
   Hexagon stacks
  -->
 <robot name="stack_hexagons" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find tegraBot_description)/urdf/common_properties.urdf.xacro"/>
+  <xacro:include filename="$(find tegrabot_description)/urdf/common_properties.urdf.xacro"/>
   
   <!-- Xacro properties -->
   <xacro:property name="M_SCALE" value="0.001"/>
@@ -20,7 +20,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/hexagons/pole_bottom.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/stacks/hexagons/pole_bottom.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -49,7 +49,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 ${M_PI} 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/hexagons/pole_middle.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/stacks/hexagons/pole_middle.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -80,7 +80,7 @@
       <visual>
         <origin xyz=" 0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/hexagons/pole_top.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/stacks/hexagons/pole_top.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -109,7 +109,7 @@
       <visual>
         <origin xyz="0 0 -0.01" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/sensors/sensor_pole.dae" />
+          <mesh filename="package://tegrabot_description/meshes/sensors/sensor_pole.dae" />
         </geometry>
       </visual>
       <collision>
@@ -152,7 +152,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/hexagons/plate_bottom.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/stacks/hexagons/plate_bottom.dae"/>
         </geometry>
       </visual>  
       <collision>
@@ -184,7 +184,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/hexagons/plate_middle.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/stacks/hexagons/plate_middle.dae"/>
         </geometry>
       </visual>  
       <collision>
@@ -211,7 +211,7 @@
       <visual>
         <origin xyz="0 0 -0.01" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/sensor_pole.dae" />
+          <mesh filename="package://tegrabot_description/meshes/stacks/sensor_pole.dae" />
         </geometry>
 		<material name="material_black"/>
       </visual>
@@ -247,7 +247,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/stacks/hexagons/plate_top.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/stacks/hexagons/plate_top.dae"/>
         </geometry>
       </visual>  
       <collision>

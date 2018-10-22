@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="sensor_ydlidar" xmlns:xacro="http://ros.org/wiki/xacro">
-	<!--<xacro:include filename="$(find tegraBot_description)/urdf/turtlebot_gazebo.urdf.xacro"/>-->
-  <xacro:include filename="$(find tegraBot_description)/urdf/tegraBot_properties.urdf.xacro"/>
+	<!--<xacro:include filename="$(find tegrabot_description)/urdf/turtlebot_gazebo.urdf.xacro"/>-->
+  <xacro:include filename="$(find tegrabot_description)/urdf/tegraBot_properties.urdf.xacro"/>
 
   <!-- Parameterised in part by the values in tegraBot_properties.urdf.xacro -->
   <xacro:macro name="sensor_ydlidar" params="parent">
@@ -16,7 +16,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://tegraBot_description/meshes/sensors/ydlidar_x4.dae"/>
+          <mesh filename="package://tegrabot_description/meshes/sensors/ydlidar_x4.dae"/>
         </geometry>
       </visual>
       <collision>

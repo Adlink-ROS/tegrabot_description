@@ -11,13 +11,13 @@
 -->    
 	
 	<!--Following lines was copied from kobuki_hexagons_astra.urdf.xacro-->
-	<!--<xacro:include filename="$(find tegraBot_description)/urdf/turtlebot_common_library.urdf.xacro" />-->
-  <xacro:include filename="$(find tegraBot_description)/urdf/tegraBot_properties.urdf.xacro"/>
-  <xacro:include filename="$(find tegraBot_description)/urdf/kobuki.urdf.xacro" />
-  <xacro:include filename="$(find tegraBot_description)/urdf/stacks/tegraBot_stack.urdf.xacro"/>
-  <xacro:include filename="$(find tegraBot_description)/urdf/computers/m200_jt2.urdf.xacro"/>
-  <xacro:include filename="$(find tegraBot_description)/urdf/sensors/astra.urdf.xacro"/>
-  <xacro:include filename="$(find tegraBot_description)/urdf/sensors/ydlidar_x4.urdf.xacro"/>
+	<!--<xacro:include filename="$(find tegrabot_description)/urdf/turtlebot_common_library.urdf.xacro" />-->
+  <xacro:include filename="$(find tegrabot_description)/urdf/tegraBot_properties.urdf.xacro"/>
+  <xacro:include filename="$(find tegrabot_description)/urdf/kobuki.urdf.xacro" />
+  <xacro:include filename="$(find tegrabot_description)/urdf/stacks/tegraBot_stack.urdf.xacro"/>
+  <xacro:include filename="$(find tegrabot_description)/urdf/computers/m200_jt2.urdf.xacro"/>
+  <xacro:include filename="$(find tegrabot_description)/urdf/sensors/astra.urdf.xacro"/>
+  <xacro:include filename="$(find tegrabot_description)/urdf/sensors/ydlidar_x4.urdf.xacro"/>
   
   <kobuki/>
   <stack_hexagons parent="base_link"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+    <name>tegrabot_description</name>
+    <version>0.3.0</version>
+    <description>Description of the adlink tegraBot model</description>
+    <maintainer email="adlinkros@todo.todo">adlinkros</maintainer>
+    <license>Apache 2.0</license>
+    <!-- <url type="website">http://wiki.ros.org/adlink_ddsbot</url> -->
+
+    <buildtool_depend>catkin</buildtool_depend>
+	
+    <run_depend>urdf</run_depend>
+    <run_depend>xacro</run_depend>
+
+</package>
