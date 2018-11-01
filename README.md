@@ -1,4 +1,4 @@
-kobuki_description
-==================
+This is part of the [adlink_tegrabot](https://github.com/Adlink-ROS/adlink_tegrabot) AI tracking robot project. Please go there for more information
 
-Unary stack for kobuki_description until we have catkinized xacro dependancy.
+## tegrabot_description
+A robot model (urdf) and mesh package
