@@ -23,7 +23,7 @@
   <stack_hexagons parent="base_link"/>
   <!--<sensor_astra parent="base_link"/>-->
   <sensor_d435 parent="sensor_pole_link">
-	  <origin xyz="0 0 0.59" rpy="0 0 0"/>
+	  <origin xyz="0 0 0.59" rpy="0 -0.14 0"/>
   </sensor_d435>
   <computers parent="plate_middle_link"/>
   <sensor_ydlidar parent="plate_bottom_link"/>
